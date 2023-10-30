@@ -1,26 +1,48 @@
 html {
     font-weight: 500;
+    font-size: 18px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    width: 60vw;
+    max-width: 750px;
+    min-width: 250px;
+    margin: 0 5vw;
+    background-color: white;
+    margin-bottom: 25px;
 }
 
 .about {
-    background-color: red;
+    margin: 24px auto;
+    background-color: white;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
 }
 
+.about a {
+    font-style: normal;
+}
+
+.about p {
+    margin: 0;
+}
+
 .about h1 {
-    text-align: center;
+    font-style: normal;
+    text-decoration: underline;
     font-size: 24px;
 }
 
-.about div {
-    margin: auto 5vw;
-    background-color: purple;
-}
-
 .about .list {
-    margin: 0 15vw;
-    background-color: green;
+    margin: 0 5vw;
+    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -28,7 +50,7 @@ html {
 }
 
 .about .table {
-    background-color: lightblue;
+    background-color: whitered;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -36,7 +58,7 @@ html {
 }
 
 .table ul {
-    margin: 0 0;
+    margin: 0;
     list-style: none;
 }
 
@@ -45,8 +67,8 @@ html {
 }
 
 .head {
-    background-color: yellow;
-    margin: auto;
+    background-color: white;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,31 +80,34 @@ html {
 }
 
 .head img {
-    width: 120px;
+    width: 150px;
     height: auto;
 }
 
 .nav {
-    background-color: black;
+    background-color: #003566;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    flex-grow: 1;
+    margin: 0;
   }
 
 .nav a {
     display: block;
     text-align: center;
     color:white;
-    text-decoration: none;
+    text-decoration: underline;
     font-weight: bolder;
-    padding: 14px 12vw; 
-    background-color: darkgray;
+    padding: 14px 1vw; 
     text-transform: uppercase;
+    flex: 1 1 0;
 }
 
 .nav a:hover:not(.nav .active) {
-    background-color: gray;
+    background-color: #001d3d;
 }
 
 .nav .active {
-    background-color: darkblue;
+    background-color: #ff6b35;
+    text-decoration: none;
 }
