@@ -73,11 +73,13 @@ html {
     text-align: center;
     color:white;
     text-decoration: none;
-    padding: 14px 20px; 
+    font-weight: bolder;
+    padding: 14px 12vw; 
     background-color: darkgray;
+    text-transform: uppercase;
 }
 
-.nav a:hover {
+.nav a:hover:not(.nav .active) {
     background-color: gray;
 }
 
