@@ -58,8 +58,13 @@ body {
 }
 
 .table ul {
-    margin: 0;
     list-style: none;
+}
+
+.table ul ul {
+    font-style: italic;
+    text-align: right;
+    color: rgba(0,0,0,0.5);
 }
 
 .table .bf {
@@ -80,12 +85,13 @@ body {
 }
 
 .head img {
-    width: 150px;
-    height: auto;
+    width: 195px;
+    height: 200px;
+    margin: 20px 0;
 }
 
 .nav {
-    background-color: #003566;
+    background-color: slateblue;
     display: flex;
     justify-content: center;
     flex-grow: 1;
@@ -104,10 +110,10 @@ body {
 }
 
 .nav a:hover:not(.nav .active) {
-    background-color: #001d3d;
+    background-color: darkslateblue;
 }
 
 .nav .active {
-    background-color: #ff6b35;
+    background-color: orange;
     text-decoration: none;
 }
